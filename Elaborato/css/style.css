@@ -82,17 +82,16 @@ form {
 }
 
 input {
+	font: 14px 'Open Sans', sans-serif;
   border: 2px solid #ccc;
   padding: 6px;
-  display: block;
 	margin-bottom: 10px;
   width: 96%;
 }
 
 button {
   display: inline-block;
-  padding: 15px 25px;
-  font-size: 2px;
+  padding: 10px 10px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
