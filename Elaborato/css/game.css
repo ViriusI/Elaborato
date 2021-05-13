@@ -53,15 +53,12 @@ header {
   --shadow-color-light: white;
 }
   
-p {
-  font-size: 65px;
-  font-family: "Archivo Black", "Archivo", sans-serif;
-  display: block;
-}
-  
 .title {
   color: white;
   animation: neon 1s infinite;
+  font-size: 60px;
+  font-family: "Archivo Black", "Archivo", sans-serif;
+  display: block;
 }
 
 @keyframes neon {
@@ -80,4 +77,18 @@ p {
       0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
       0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
     }
+}
+
+#d {
+  margin: 0 auto;
+  text-align: center;
+  width: 450px;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+#info {
+  float: right;
+  border: 2px solid blue;
+  border-radius: 10px;
 }
