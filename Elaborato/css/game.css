@@ -79,11 +79,6 @@ header {
     }
 }
 
-#h {
-  border: 2px solid red;
-  border-radius: 10px;
-}
-
 #d {
   margin: 0 auto;
   text-align: center;
