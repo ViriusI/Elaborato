@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family:'Times New Roman', Times, serif;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topnav {
+  position: relative;
+  overflow: hidden ;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+#page {
+  margin: 20px;
+  zoom: 130%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#txtSearch {
+  width: 200px;
+}
+
+#games {
+  margin-top: 20px;
+  column-count: 4;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  color: rgb(230, 230, 230);
+}
+
+a.title:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+#btnSearch {
+  background-color: #5759c7;
+  color: #fff;
+  outline: none;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 1.2rem;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.center-block {
+  height: 32.5px;
+  margin-right: 5px;
+}
+
+.bottom-banner {
+  margin: 70px 0 20px;
+}
+
+.bottom-banner .games {
+  display: grid;
+  grid-gap: 32px 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.bottom-banner .game {
+  position: relative;
+  padding: 40px 10%;
+  border-radius: 20px;
+  background:#fff;
+  color:#ddd;
+}
+
+.bottom-banner .game::after {
+  content: '';
+  width: 90%;
+  height: 50px;
+  position: absolute;
+  bottom: -12px;
+  left: 5%;
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 20px;
+  background: var(--text_light);
+}

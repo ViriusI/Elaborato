@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body style="background: url('images/log.jpg'); background-size: cover;">
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      
+      <div class="topnav-right">
+        <a href="register.html">Registrazione</a>
+      </div>
+    </div>
+    
+    <div id="page">
+      <form method="post" action="login.php">
+        <header>
+          <h1><a class="title">ACCESSO:</a></h1>
+        </header>
+        <input type="text" id="username" placeholder="Nome Utente" name="username" maxlength="50" required>
+        <input type="password" id="password" placeholder="Password" name="password" required>
+        <button type="submit" id="button" name="login">Accedi</button>
+        <a href="register.html" style="margin: 0 auto; display:block; text-align: center; margin-top: 5px;">Non hai un account?</a>
+    </form>
+  </div>
+  
+  </body>
+</html>
