@@ -87,6 +87,7 @@ input {
   padding: 6px;
 	margin-bottom: 10px;
   width: 96%;
+  position: relative;
 }
 
 button {
