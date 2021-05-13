@@ -82,7 +82,6 @@ form {
 }
 
 input {
-	font: 14px 'Open Sans', sans-serif;
   border: 2px solid #ccc;
   padding: 6px;
   display: block;
@@ -93,7 +92,7 @@ input {
 button {
   display: inline-block;
   padding: 15px 25px;
-  font-size: 24px;
+  font-size: 2px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
