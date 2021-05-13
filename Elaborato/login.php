@@ -12,7 +12,7 @@ if (isset($_POST['login'])) {
     $password = $_POST['password'] ?? '';
     
     if (empty($username) || empty($password)) {
-        $msg = 'Inserisci username e password %s';
+        $msg = 'Inserisci username e password';
     } else {
         $query = "
             SELECT username, password
@@ -27,7 +27,7 @@ if (isset($_POST['login'])) {
         $user = $check->fetch(PDO::FETCH_ASSOC);
         
         if (!$user || password_verify($password, $user['password']) === false) {
-            $msg = 'Credenziali utente errate %s';
+            $msg = 'Credenziali utente errate';
         } else {
             session_regenerate_id();
             $_SESSION['session_id'] = session_id();

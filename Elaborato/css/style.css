@@ -33,10 +33,6 @@ body {
   color: white;
 }
 
-.topnav-right {
-  float: right;
-}
-
 #page {
   margin: 20px;
   zoom: 175%;
@@ -85,14 +81,16 @@ input {
 	font: 14px 'Open Sans', sans-serif;
   border: 2px solid #ccc;
   padding: 6px;
+  display: block;
 	margin-bottom: 10px;
   width: 96%;
-  position: relative;
 }
 
 button {
-  display: inline-block;
-  padding: 10px 10px;
+  margin: 0 auto;
+  display: block;
+  padding: 10px 15px;
+  font-size: 12px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;

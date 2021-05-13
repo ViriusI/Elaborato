@@ -16,7 +16,7 @@ if (isset($_POST['register'])) {
     
     if (empty($username) || empty($password)) {
         $flag = TRUE;
-        $msg = 'Compila tutti i campi %s';
+        $msg = 'Compila tutti i campi';
     } elseif (false === $isUsernameValid) {
         $flag = TRUE;
         $msg = 'Lo username non è valido.';
@@ -40,7 +40,7 @@ if (isset($_POST['register'])) {
         
         if (count($user) > 0) {
             $flag = TRUE;
-            $msg = 'Username già in uso %s';
+            $msg = 'Username già in uso';
         } else {
             $query = "
                 INSERT INTO users
