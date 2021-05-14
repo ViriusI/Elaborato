@@ -10,6 +10,8 @@ function getFromLocalStorage() {
   document.getElementById("rating").innerText = "Valutazione: " + game.rating
   let description = game.description
   document.getElementById("description").insertAdjacentHTML('beforeend', description)
+  var div = document.getElementById("h");
+  div.style.backgroundImage = `url(${game.background_image})`;
   //document.getElementById("")
   
   //document.getElementById("header").innerText = "ciao"
