@@ -11,7 +11,7 @@ function getFromLocalStorage() {
   let description = game.description
   document.getElementById("description").insertAdjacentHTML('beforeend', description)
   var div = document.getElementById("h");
-  div.style.backgroundImage = `url(${game.background_image})`;
+  div.style.background = `linear-gradient(to bottom, transparent 0%, white 100%), url(${game.background_image}) no-repeat center top`;
   //document.getElementById("")
   
   //document.getElementById("header").innerText = "ciao"
