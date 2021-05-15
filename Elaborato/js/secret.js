@@ -5,6 +5,7 @@ let game_Detail = document.getElementById("game_detail");
 let element = document.getElementById("select");
 let size = document.getElementById("size");
 
+
 const apiKey = "1ac5994c124e4ee8a3e8e30222bd6b55";
 
 
@@ -19,9 +20,9 @@ btnSearch.onclick = e => {
   var url = Url(i, d, s);
   
   txtSearch.value = "";
-  
+  document.getElementById("game_list").style.display = "block";
   cercaGioco(url);
-
+  
 }
 
 //funzione che ritorna l'url necessario al fetch
