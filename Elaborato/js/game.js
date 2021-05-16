@@ -9,7 +9,7 @@ function getFromLocalStorage() {
   document.getElementById("header").innerText = game.name
   document.getElementById("rating").innerText = "Valutazione: " + game.rating
   let description = game.description
-  document.getElementById("description").insertAdjacentHTML('beforeend', description)
+  document.getElementById("descrizione").insertAdjacentHTML('beforeend', description)
   var div = document.getElementById("h");
   div.style.background = `linear-gradient(to bottom, transparent 0%, white 100%), url(${game.background_image}) no-repeat center top`;
   //document.getElementById("")

@@ -11,7 +11,7 @@ CREATE TABLE `giochi` (
   `nome` varchar(20) NOT NULL,
   `descrizione` text NOT NULL,
   `img` text NOT NULL,
-  `rating` float(3, 1) NOT NULL,
+  `rating` float(4, 2) NOT NULL,
   `website` text NOT NULL,
   PRIMARY KEY (`id`)
 )

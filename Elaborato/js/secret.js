@@ -1,7 +1,6 @@
 let txtSearch = document.getElementById("txtSearch")
 let btnSearch = document.getElementById("btnSearch")
 let game_List = document.getElementById("game_list");
-let game_Detail = document.getElementById("game_detail");
 let element = document.getElementById("select");
 let size = document.getElementById("size");
 
@@ -20,7 +19,6 @@ btnSearch.onclick = e => {
   var url = Url(i, d, s);
   
   txtSearch.value = "";
-  document.getElementById("game_list").style.display = "block";
   cercaGioco(url);
   
 }
