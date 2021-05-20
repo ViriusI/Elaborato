@@ -5,7 +5,7 @@ let Games = []
 
   var game = JSON.parse(localStorage.getItem("games"))
 
-  let generi = game.genres
+  var generi = game.genres
   console.log(generi)
   document.getElementById("header").innerText = game.name
   document.getElementById("rating").innerText = "Valutazione: " + game.rating
