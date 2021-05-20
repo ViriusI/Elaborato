@@ -16,7 +16,7 @@ if (isset($_POST['login'])) {
     } else {
         $query = "
             SELECT username, password
-            FROM users
+            FROM utenti
             WHERE username = :username
         ";
         

@@ -12,7 +12,6 @@ const apiKey = "1ac5994c124e4ee8a3e8e30222bd6b55";
 btnSearch.onclick = e => {
   e.preventDefault();
   resetGiochi();
-  
   var i = element.options[element.selectedIndex].text;
   var d = txtSearch.value;
   var s = size.options[size.selectedIndex].text;

@@ -28,7 +28,7 @@ if (isset($_POST['register'])) {
 
         $query = "
             SELECT id
-            FROM users
+            FROM utenti
             WHERE username = :username
         ";
         
@@ -43,7 +43,7 @@ if (isset($_POST['register'])) {
             $msg = 'Username già in uso';
         } else {
             $query = "
-                INSERT INTO users
+                INSERT INTO utenti
                 VALUES (0, :username, :password)
             ";
         

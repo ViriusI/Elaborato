@@ -4,7 +4,7 @@ $config = [
     'db_host' => '127.0.0.1',
     'db_name' => 'elaborato',
     'db_user' => 'admin',
-    'db_password' => '65YutrQEJnFZHNwK',
+    'db_password' => 'J0dbLgtURKAXI5CN',
 ];
 
 $db_config = $config['db_engine'] . ":host=".$config['db_host'] . ";dbname=" . $config['db_name'];

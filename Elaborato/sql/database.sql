@@ -1,6 +1,6 @@
 CREATE TABLE `utenti` (
   `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `nome_utente` varchar(20) NOT NULL,
+  `username` varchar(20) NOT NULL,
   `password` varchar(20) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
