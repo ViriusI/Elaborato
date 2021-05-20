@@ -4,7 +4,7 @@ CREATE TABLE `utenti` (
   `password` varchar(20) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci AUTO_INCREMENT=1;
 
 CREATE TABLE `giochi` (
   `id` int(11) NOT NULL,
