@@ -4,13 +4,16 @@ let games = document.getElementById("games")
 let Games = []
 
   var game = JSON.parse(localStorage.getItem("games"))
-  
+
+  let generi = game.genres
+  console.log(generi)
   document.getElementById("header").innerText = game.name
   document.getElementById("rating").innerText = "Valutazione: " + game.rating
   let description = game.description
   document.getElementById("descrizione").insertAdjacentHTML('beforeend', description)
   var div = document.getElementById("h");
   div.style.background = `linear-gradient(to bottom, transparent 0%, white 100%), url(${game.background_image}) no-repeat center top`;
+  //for(var i = 0; i < generi.lenght; i++ )
   //document.getElementById("")
   
   //document.getElementById("header").innerText = "ciao"
