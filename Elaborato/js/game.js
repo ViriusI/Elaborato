@@ -6,7 +6,7 @@
   var game = JSON.parse(localStorage.getItem("games"))
 
   var generi = game.genres
-  console.log(generi)
+  
   document.getElementById("header").innerText = game.name
   document.getElementById("rating").innerText = "Valutazione: " + game.rating
   let description = game.description
@@ -14,7 +14,7 @@
   var div = document.getElementById("h");
   div.style.background = `linear-gradient(to bottom, transparent 0%, white 100%), url(${game.background_image}) no-repeat center top`;
   for(var i = 0; i < generi.lenght; i++ )
-    var string = generi[i].name
+    var string = JSON.stringify(generi[i].name)
     var genere
     genere = genere.concat(", ", string)
   document.getElementById("generi").innerText = genere
