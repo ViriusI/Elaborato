@@ -79,7 +79,7 @@ header {
     }
 }
 
-#d {
+#info {
   margin: 0 auto;
   text-align: center;
   width: 450px;
@@ -87,12 +87,14 @@ header {
   border-radius: 10px;
 }
 
-#info {
+#d {
   float: right;
   border: 2px solid blue;
   border-radius: 10px;
 }
 
-#btn {
-  
+#s {
+  float: right;
+  border: 2px solid blue;
+  border-radius: 10px;
 }

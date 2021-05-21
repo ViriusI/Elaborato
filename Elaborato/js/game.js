@@ -14,7 +14,9 @@ btn.onclick = e => {
   var div = document.getElementById("h")
   div.style.background = `linear-gradient(to bottom, transparent 0%, white 100%), url(${game.background_image}) no-repeat center top`
   
-  document.getElementById("generi").innerText = game.genres.map(g => g.name).join(", ")
+  document.getElementById("generi").innerText = "Generi: " + game.genres.map(g => g.name).join(", ")
+  document.getElementById("tags").innerText = "Tags: " + game.tags.map(g => g.name).join(", ")
+  document.getElementById("tags").style.width = "300px"
 
-  //document.getElementById("header").innerText = "ciao"
+  document.getElementById("data").innerText = "Data di pubblicazione" + game.released
 }
