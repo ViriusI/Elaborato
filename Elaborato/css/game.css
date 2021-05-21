@@ -38,7 +38,6 @@ body {
 }
   
 #page {
-  margin: 10px;
   zoom: 130%;
 }
   
@@ -94,7 +93,7 @@ header {
 }
 
 #s {
-  float: right;
+  float: left;
   border: 2px solid blue;
   border-radius: 10px;
 }
