@@ -38,7 +38,8 @@ body {
 }
   
 #page {
-  zoom: 130%;
+  zoom: 125%;
+  text-align: center;
 }
   
 header {
@@ -82,18 +83,41 @@ header {
   margin: 0 auto;
   text-align: center;
   width: 450px;
-  border: 2px solid red;
+  border: 3.5px solid rgb(73, 73, 73);
   border-radius: 10px;
+  background-color: rgb(235, 235, 235);
 }
 
 #d {
   float: right;
-  border: 2px solid blue;
+  border: 3.5px solid rgb(73, 73, 73);
   border-radius: 10px;
+  background-color: rgb(235, 235, 235);
 }
 
 #s {
   float: left;
-  border: 2px solid blue;
+  border: 3.5px solid rgb(73, 73, 73);
   border-radius: 10px;
+  background-color: rgb(235, 235, 235);
+}
+
+button {
+  margin: 0 auto;
+  display: block;
+  padding: 10px 15px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #f44336;
+  color: white;
 }

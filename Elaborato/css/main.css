@@ -33,14 +33,6 @@ body {
   color: white;
 }
 
-.topnav-centered a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .topnav-right {
   float: right;
 }

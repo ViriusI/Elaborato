@@ -19,5 +19,7 @@ btn.onclick = e => {
   document.getElementById("tags").innerText = "Tags: " + game.tags.map(g => g.name).join(", ")
   document.getElementById("tags").style.width = "300px"
 
-  document.getElementById("data").innerText = "Data di pubblicazione" + game.released
+  document.getElementById("data").innerText = "Data di pubblicazione: " + game.released
+  document.getElementById("piattaforme").innerText = "Piattaforme: " + game.platforms.map(p => p.platform.name).join(", ")
+  document.getElementById("sito").href = game.website
 }
