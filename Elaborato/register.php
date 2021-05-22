@@ -21,7 +21,7 @@ if (isset($_POST['register'])) {
     } elseif ($pwdLenght < 3 || $pwdLenght > 20) {
         $msg = 'La password non è valida';
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $msg = "L'email non è valida";
+        $msg = "Email non valida";
     } else {
         $password_hash = password_hash($password, PASSWORD_BCRYPT);
 
@@ -56,7 +56,7 @@ if (isset($_POST['register'])) {
             
         }
     }
-    echo "<script type='text/javascript'>alert('{$msg}');</script>";
+    
     include 'register.html';
-    echo "<script type='text/javascript'>alert('{$msg}');</script>";
+    echo "<script type='text/javascript'>alert('$msg');</script>";
 }
