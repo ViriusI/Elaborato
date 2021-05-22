@@ -49,12 +49,12 @@ CREATE TABLE `salva` (
   FOREIGN KEY (`idGioco`) REFERENCES `giochi`(`id`)
 )
 
-CREATE TABLE `??` (
+CREATE TABLE `utilizza` (
   `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `idPiattaforma` int(11) NOT NULL,
   `idGioco` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  FOREIGN KEY (`idUtente`) REFERENCES `utenti`(`id`),
+  FOREIGN KEY (`idPiattaforma`) REFERENCES `piattaforme`(`id`),
   FOREIGN KEY (`idGioco`) REFERENCES `giochi`(`id`)
 )
 
@@ -63,7 +63,7 @@ CREATE TABLE `??` (
   `idGenere` int(11) NOT NULL,
   `idGioco` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  FOREIGN KEY (`idUtente`) REFERENCES `generi`(`id`),
+  FOREIGN KEY (`idGenere`) REFERENCES `generi`(`id`),
   FOREIGN KEY (`idGioco`) REFERENCES `giochi`(`id`)
 )
 

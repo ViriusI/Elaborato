@@ -6,6 +6,7 @@ let btn = document.getElementById("btn")
 btn.onclick = e => {
   e.preventDefault();
   btn.style.visibility = 'hidden'
+  document.getElementById("page").style.visibility = 'visible';
 
   document.getElementById("header").innerText = game.name
   document.getElementById("rating").innerText = "Valutazione: " + game.rating
