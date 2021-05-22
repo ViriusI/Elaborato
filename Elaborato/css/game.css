@@ -4,6 +4,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background: linear-gradient(to top, transparent 0%, white 80%),#fffddd;
 }
   
 .topnav {
