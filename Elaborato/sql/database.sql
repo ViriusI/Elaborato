@@ -58,7 +58,7 @@ CREATE TABLE `utilizza` (
   FOREIGN KEY (`idGioco`) REFERENCES `giochi`(`id`)
 )
 
-CREATE TABLE `??` (
+CREATE TABLE `appartiene` (
   `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `idGenere` int(11) NOT NULL,
   `idGioco` int(11) NOT NULL,
@@ -67,7 +67,7 @@ CREATE TABLE `??` (
   FOREIGN KEY (`idGioco`) REFERENCES `giochi`(`id`)
 )
 
-CREATE TABLE `??` (
+CREATE TABLE `identifica` (
   `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `idTag` int(11) NOT NULL,
   `idGioco` int(11) NOT NULL,
