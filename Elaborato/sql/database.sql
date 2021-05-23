@@ -1,9 +1,11 @@
 CREATE TABLE `utenti` (
   `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `username` varchar(20) NOT NULL,
+  `email` varchar(20) NOT NULL,
   `password` varchar(20) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `username` (`username`)
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci AUTO_INCREMENT=1;
 
 CREATE TABLE `giochi` (
@@ -37,11 +39,10 @@ CREATE TABLE `tags` (
   UNIQUE KEY `nome` (`nome`)
 )
 
-
 --Tabelle date dalle associazioni N:N
 
 CREATE TABLE `salva` (
-  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `idUtente` int(11) NOT NULL,
   `idGioco` int(11) NOT NULL,
   PRIMARY KEY (`id`),
@@ -50,7 +51,7 @@ CREATE TABLE `salva` (
 )
 
 CREATE TABLE `utilizza` (
-  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `idPiattaforma` int(11) NOT NULL,
   `idGioco` int(11) NOT NULL,
   PRIMARY KEY (`id`),
@@ -59,7 +60,7 @@ CREATE TABLE `utilizza` (
 )
 
 CREATE TABLE `appartiene` (
-  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `idGenere` int(11) NOT NULL,
   `idGioco` int(11) NOT NULL,
   PRIMARY KEY (`id`),
@@ -68,7 +69,7 @@ CREATE TABLE `appartiene` (
 )
 
 CREATE TABLE `identifica` (
-  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `idTag` int(11) NOT NULL,
   `idGioco` int(11) NOT NULL,
   PRIMARY KEY (`id`),
