@@ -1,8 +1,8 @@
 CREATE TABLE `utenti` (
   `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `username` varchar(20) NOT NULL,
-  `email` varchar(20) NOT NULL,
   `password` varchar(20) NOT NULL,
+  `email` varchar(20) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`),
   UNIQUE KEY `email` (`email`)
