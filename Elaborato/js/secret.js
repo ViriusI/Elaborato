@@ -62,7 +62,7 @@ async function DettagliGioco(id) {
   var result = await fetch("https://api.rawg.io/api/games/" + id + "?key=" + apiKey + "&page_size=1");
   var data = await result.json();
 
-  //local storage e spostamento al file game.html
+  //salvataggio sul local storage e spostamento al file game.html
   localStorage.setItem("games", JSON.stringify(data))
   location.href = "game.html";
 }

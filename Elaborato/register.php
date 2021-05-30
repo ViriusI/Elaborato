@@ -42,12 +42,13 @@ if (isset($_POST['register'])) {
         } else {
             $query = "
                 INSERT INTO utenti
-                VALUES (0, :username, :password)
+                VALUES (0, :username, :password, :email)
             ";
         
             $check = $pdo->prepare($query);
             $check->bindParam(':username', $username, PDO::PARAM_STR);
             $check->bindParam(':password', $password_hash, PDO::PARAM_STR);
+            $check->bindParam(':email', $email, PDO::PARAM_STR);
             $check->execute();
             
             
