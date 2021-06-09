@@ -35,9 +35,9 @@ if (isset($_POST['register'])) {
         $check->bindParam(':username', $username, PDO::PARAM_STR);
         $check->execute();
         
-        $user = $check->fetchAll(PDO::FETCH_ASSOC);
+        $utente = $check->fetchAll(PDO::FETCH_ASSOC);
         
-        if (count($user) > 0) {
+        if (count($utente) > 0) {
             $msg = 'Username già in uso';
         } else {
             $query = "
