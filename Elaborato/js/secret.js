@@ -1,4 +1,5 @@
 let txtSearch = document.getElementById("txtSearch")
+let txtSearch2 = document.getElementById("txtSearch2")
 let btnSearch = document.getElementById("btnSearch")
 let game_List = document.getElementById("game_list");
 let element = document.getElementById("select");
@@ -13,24 +14,26 @@ btnSearch.onclick = e => {
   e.preventDefault();
   resetGiochi();
   var i = element.options[element.selectedIndex].text;
-  var d = txtSearch.value;
+  var t = txtSearch.value;
+  var d = txtSearch2.value;
   var s = size.options[size.selectedIndex].text;
-  var url = Url(i, d, s);
+  var url = Url(i, t, d, s);
   
   txtSearch.value = "";
+  txtSearch2.value = "";
   cercaGioco(url);
   
 }
 
 //funzione che ritorna l'url necessario al fetch
-function Url(index ,data, size) {
+function Url(index, text ,data, size) {
   let u;
   if (index === "Titolo" )
-      u = 'https://api.rawg.io/api/games?key=' + apiKey + '&search=' + data + '&page_size=' + size;
+      u = 'https://api.rawg.io/api/games?key=' + apiKey + '&search=' + text + '&page_size=' + size;
   else if (index === "Genere" )
-      u = 'https://api.rawg.io/api/games?key=' + apiKey + '&genres=' + data + '&page_size=' + size;
+      u = 'https://api.rawg.io/api/games?key=' + apiKey + '&search=' + text + '&genres=' + data + '&page_size=' + size;
   else if (index === "Tag" )
-      u = 'https://api.rawg.io/api/games?key=' + apiKey + '&tags=' + data + '&page_size=' + size;
+      u = 'https://api.rawg.io/api/games?key=' + apiKey + '&search=' + text + '&tags=' + data + '&page_size=' + size;
   return u;
 }
 
